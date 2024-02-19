@@ -9,7 +9,7 @@
     <h3>Edit Your List</h3>
     <form method = "POST" action="/listings/<%= listing._id %>?_method=PUT">
         <input type="text" name="listing[title]" value="<%= listing.title %>" ><br><br>
-        <textarea name="listing[description]" value="<%= listing.description %>" cols="30" rows="10"></textarea><br><br>
+        <textarea name="listing[description]" cols="30" rows="10"><%= listing.description %></textarea><br><br>
         <input type="text" name="listing[image]"value="<%= listing.image %>"><br><br>
         <input type="number" name="listing[price]" value="<%= listing.price %>"><br><br>
         <input type="text" name="listing[country]" value="<%= listing.country %>"><br><br>
