@@ -1,0 +1,14 @@
+ /* Navbar */
+ .navbar{
+    height:5rem;
+    background-color: white;
+ }
+
+ .fa-location-arrow{
+    color: aqua;
+    font-size: 2rem;
+ }
+
+ .nav-link{
+    color: #222222 !important;
+ }
