@@ -84,8 +84,14 @@
     background-color: white;
  }
 
- .add-btn{
+ /* New Listing Page */
+ .add-btn,.edit-btn{
     background-color:aquamarine !important ;
     color:black !important;
     border: none !important;
+ }
+
+ /* Show Page */
+ .show-img {
+    height: 30vh;
  }
