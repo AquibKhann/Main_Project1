@@ -12,11 +12,12 @@
         <p class="card-text"><%= listing.country %></p>
       </div>
     </div>
-    <a href="/listings/<%= listing._id %>/edit" class="btn edit-btn">Edit this Listing</a>
-    <br /><br />
+    <div class="btns d-flex align-items-center">
+    <a href="/listings/<%= listing._id %>/edit" class="btn  btn-primary me-4 col-1">Edit </a>
     <form method="POST" action="/listings/<%=listing._id%>?_method=DELETE">
-      <button class="btn btn-danger">Delete this listing</button> <br><br>
+      <button class="btn btn-danger  ">Delete</button>
     </form>
+    </div>
 </div>
 
 <div class="col-8 offset-4 mb-3">
