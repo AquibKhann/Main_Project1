@@ -98,3 +98,17 @@
 .show-img {
    height: 30vh;
 }
+
+/*maps*/
+#map { 
+   height: 300px;
+   width: 80vh;
+      
+}
+
+#menu {
+   
+   background: #efefef;
+   padding: 10px;
+   font-family: 'Open Sans', sans-serif;
+}
