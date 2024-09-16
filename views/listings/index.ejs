@@ -1,9 +1,90 @@
 <% layout("/layouts/boilerplate")%> 
+
+<style>
+  #filters{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .filter{
+    text-align:center;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    opacity: 0.7;
+  }
+
+  .filter:hover  {
+    opacity: 1;
+    cursor: pointer;
+
+  }
+</style>
+
 <body>
   
-  <h3>All Listings</h3>
+  <div id="filters">
+    <div class="filter">
+      <div><i class="fa-solid fa-people-group"></i></div>
+      Peers
+    </div>
+    <div class="filter">
+      <div><i class="fa-solid fa-user"></i></div>
+      User
+    </div>
+    <div class="filter">
+      <div><i class="fa-solid fa-fire"></i></div>
+      Trending
+    </div>
+    <div class="filter">
+      <div><i class="fa-solid fa-heart"></i></div>
+      Wishlist
+    </div>
+    <div class="filter">
+      <div><i class="fa-solid fa-mountain-city"></i></div>
+      City
+    </div>
+    <div class="filter">
+      <div><i class="fa-solid fa-umbrella-beach"></i></div>
+      Beach
+    </div>
+    <div class="filter">
+      <div><i class="fa-solid fa-bell"></i></div>
+      Notisfication
+    </div>
+    <div class="filter">
+      <div><i class="fa-solid fa-handshake"></i></div>
+      Connect
+    </div>
+    <div class="filter">
+      <div><i class="fa-solid fa-shop"></i></div>
+      Shop
+    </div>
+    <div class="filter">
+      <div><i class="fa-solid fa-person-swimming"></i></div>
+      Amazing pools
+    </div>
+    <div class="filter">
+      <div><i class="fa-solid fa-campground"></i></div>
+      Camping
+    </div>
+    <div class="filter">
+      <div><i class="fa-solid fa-car-side"></i></div>
+      Travel
+    </div>
+    <div class="filter">
+      <div><i class="fa-solid fa-calendar"></i></div>
+      Calendar
+    </div>
+    <div class="filter">
+      <div><i class="fa-solid fa-wallet"></i></div>
+      Wallet
+    </div>
+    <div class="filter">
+      <div><i class="fa-solid fa-envelope"></i></div>
+      Form
+    </div>
+  </div>
 
-  <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 ">
+  <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 mt-3 fix">
     <% for(let listing of allListings) { %>
       <a href="/listings/<%= listing._id %>" class="listing-link">
 
