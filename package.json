@@ -1,4 +1,9 @@
 {
+
+  "engines": {
+    "node":"20.16.0"
+  },
+  
   "name": "project2",
   "version": "1.0.0",
   "description": "",
